@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+#courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.course {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.course.approved {
+  background: #c8e6c9; /* verde claro */
+  text-decoration: line-through;
+}
+
+.course.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
